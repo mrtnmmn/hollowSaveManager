@@ -23,7 +23,7 @@
                 <option value="user4">user 4</option>
             </select>
         </div>
-        <div>
+        <div class='list'>
             <ul id="list">
                 <li>prueba</li>
                 <li>prueba</li>
@@ -33,18 +33,21 @@
         </div>
     </div>
 
+    <script src="mainIndex.js"></script>
+   
     <script>
 
-        name = document.getElementById('text')
-        newButton = document.getElementById('new')
+        let name = document.getElementById('text')
+        let newButton = document.getElementById('new')
 
         newButton.addEventListener("click", function() {
             let textBox = document.getElementById('text')
             let nameSave = textBox.value + document.getElementById('users').value
             document.getElementById('list').innerHTML += '<li>' + nameSave + '</li>'
-            textBox.value('')
-        })
+            textBox.value = ' '
 
-    </script>   
+            refresh()
+        })
+    </script>
 </body>
 </html>
