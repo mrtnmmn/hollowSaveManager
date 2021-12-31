@@ -39,7 +39,7 @@ const mainMenuTemplate = [
                 label: 'Set Route',
                 click(){
                     //createAddWindow()
-                    selectFolder()
+                    console.log(selectFolder())
                 }
             },
             {

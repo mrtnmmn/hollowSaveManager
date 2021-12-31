@@ -15,6 +15,7 @@
             <button class="buttons deleteSave" id="delete buttons">Delete Save</button>
         </div>
         <div>
+            <input type="text" id="text">
             <select name="select" id="users">
                 <option value="user1">user 1</option>
                 <option value="user2">user 2</option>
@@ -23,7 +24,7 @@
             </select>
         </div>
         <div>
-            <ul>
+            <ul id="list">
                 <li>prueba</li>
                 <li>prueba</li>
                 <li>prueba</li>
@@ -33,6 +34,17 @@
     </div>
 
     <script>
+
+        name = document.getElementById('text')
+        newButton = document.getElementById('new')
+
+        newButton.addEventListener("click", function() {
+            let nameSave = document.getElementById('text').value
+            console.log('new')
+            console.log(nameSave)
+            document.getElementById('list').innerHTML += '<li>' + nameSave + '</li>'
+            nameSave.value = ''
+        })
 
     </script>
 </body>
