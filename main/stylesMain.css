@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.buttons {
+    border: none;
+    padding: 0.5rem;
+    font-size: 16px;
+    transition-duration: 400ms;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+
+.newSave {
+    background-color: white;
+    color: black;
+    border: 2px solid #30CC00;
+}
+
+.newSave:hover {
+    background-color: #30CC00;
+    color: white;
+}
+
+.loadSave {
+    background-color: white;
+    color: black;
+    border: 2px solid #3498db;
+}
+
+.loadSave:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.deleteSave {
+    background-color:  white;
+    color: black;
+    border: 2px solid #dc0000;
+}
+
+.deleteSave:hover {
+    background-color: #dc0000;
+    color: white;
+}
