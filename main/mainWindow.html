@@ -39,13 +39,12 @@
         newButton = document.getElementById('new')
 
         newButton.addEventListener("click", function() {
-            let nameSave = document.getElementById('text').value
-            console.log('new')
-            console.log(nameSave)
+            let textBox = document.getElementById('text')
+            let nameSave = textBox.value + document.getElementById('users').value
             document.getElementById('list').innerHTML += '<li>' + nameSave + '</li>'
-            nameSave.value = ''
+            textBox.value('')
         })
 
-    </script>
+    </script>   
 </body>
 </html>
