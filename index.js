@@ -1,14 +1,18 @@
 const electron = require('electron')
 const url = require('url')
 const path = require('path')
+
+let route = '/home/mrtnmmn/Documents/hollowSaveManager/pruebas/saves'
+
 const fs = require('fs') 
+let files = fs.readdirSync(route)
+
+console.log(files)
 
 const dialog = electron.dialog;
 
 const {app, BrowserWindow, Menu} = electron
 let mainWindow
-
-let route = ''
 
 app.on('ready', function() {
     mainWindow = new BrowserWindow({
